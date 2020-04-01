@@ -25,3 +25,12 @@ which frames neural style transfer as a super-resolution-like problem using perc
 
 ### Live Demo
 > Not Live yet  :disappointed:, I will update this space shortly.
+
+### Sneak Peak
+
+![Screen1](./demo/1.png)
+![Screen1](./demo/2.png)
+![Screen1](./demo/3.png)
+![Screen1](./demo/4.png)
+![Screen1](./demo/5.png)
+![Screen1](./demo/6.png)
