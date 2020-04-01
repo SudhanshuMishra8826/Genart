@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Site Title</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper.min.css')}}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <header class="site-header">
+        <div class="row align-items-center">
+            <div class="col-4 col-sm-4 col-lg-2 order-lg-1">
+                <div class="site-branding">
+                    <h1 class="site-title"><a href="index.html" rel="home"><img src="{{ url_for('static', filename='images/logo.png')}}" alt="Logo"></a></h1>
+                </div><!-- .site-branding -->
+            </div><!-- .col-8 -->
+
+            <div class="col-8 col-sm-8 col-lg-10 order-3 order-md-3 order-lg-2">
+                <nav class="site-navigation flex align-items-center justify-content-end">
+                    <div class="hamburger-menu d-lg-none order-2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div><!-- .hamburger-menu -->
+
+                    <ul>
+                        <li class="current-menu-item"><a href="/">Home</a></li>
+                        <li><a href="/blog">OUR IMAGES</a></li>
+                        <li><a href="/create">CREATE</a></li>
+                        <li><a href="https://cs.stanford.edu/people/jcjohns/eccv16/">Algorithm</a></li>
+                        <li><a href="https://distracted-hopper-7d2d50.netlify.com/">Developer</a></li>
+                    </ul>
+
+                    <div class="header-email order-1">
+                        <a href="https://www.linkedin.com/in/sudhanshumishra8826/">Sudhanshu Mishra</a>
+                    </div><!-- .header-email -->
+                </nav><!-- .site-navigation -->
+            </div><!-- .col-2 -->
+        </div><!-- .row -->
+    </header><!-- .site-header -->
+
+    <div class="row">
+        <div class="content-area blog-wrap flex">
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 blog-item">
+                <div class="blog-content">
+                    <figure>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/blog1.jpeg')}}" alt="">
+                        </a>
+                    </figure>
+
+                    
+                </div><!-- .blog-content -->
+            </div><!-- .blog-item -->
+
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 blog-item">
+                <div class="blog-content">
+                    <figure>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/blog3.jpeg')}}" alt="">
+                        </a>
+                    </figure>
+                </div><!-- .blog-content -->
+            </div><!-- .blog-item -->
+
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 blog-item">
+                <div class="blog-content">
+                    <figure>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/blog2.jpeg')}}" alt="">
+                        </a>
+                    </figure>
+                </div><!-- .blog-content -->
+            </div><!-- .blog-item -->
+
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 blog-item">
+                <div class="blog-content">
+                    <figure>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/blog4.jpeg')}}" alt="">
+                        </a>
+                    </figure>
+                </div><!-- .blog-content -->
+            </div><!-- .blog-item -->
+
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 blog-item">
+                <div class="blog-content">
+                    <figure>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/blog5.jpeg')}}" alt="">
+                        </a>
+                    </figure>
+                </div><!-- .blog-content -->
+            </div><!-- .blog-item -->
+
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 blog-item">
+                <div class="blog-content">
+                    <figure>
+                        <a href="#">
+                            <img src="{{ url_for('static', filename='images/blog6.jpeg')}}" alt="">
+                        </a>
+                    </figure>
+                </div><!-- .blog-content -->
+            </div><!-- .blog-item -->
+        </div><!-- .content-area -->
+    </div><!-- .row -->
+
+    <footer class="site-footer">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-4 order-3 order-lg-1">
+                <div class="footer-copyright">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://distracted-hopper-7d2d50.netlify.com/" target="_blank">Sudhanshu Mishra</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                </div><!-- .footer-branding -->
+            </div><!-- .col-xl-4 -->
+
+            <div class="col-12 col-lg-4 order-1 order-lg-2 d-md-none d-lg-block">
+                <nav class="footer-navigation">
+                    <ul>
+                        <li><a href="/">Back to home</a></li>
+                    </ul>
+                </nav><!-- .footer-navigation -->
+            </div><!-- .col-xl-4 -->
+
+            <div class="col-12 col-lg-4 order-2 order-lg-3">
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div><!-- .footer-social -->
+            </div><!-- .col-xl-4 -->
+        </div><!-- .row -->
+    </footer><!-- .site-footer -->
+</div><!-- .container-fluid -->
+
+<script type='text/javascript' src="{{ url_for('static', filename='js/jquery.js')}}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/swiper.min.js')}}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/masonry.pkgd.min.js')}}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/custom.js')}}"></script>
+
+</body>
+</html>

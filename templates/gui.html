@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>
+            File Upload
+        </title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color:#E8E8E8;">
+
+       <div class="img1" style="background-color: beige; height:382; width: 340; border-style: solid;">
+
+            <p><input type="file"  accept="image/*" name="image1" id="file1"  onchange="loadFile1(event)" style="display: none;"></p>
+            <p class="first"> <label for="file1" style="cursor: pointer;">Upload First Image</label></p>
+            <p><img id="output1" width="339" height="332" style="background-color:white" ></p>
+            
+            <script>
+            var loadFile1 = function(event) {
+                var image1 = document.getElementById('output1');
+                image1.src = URL.createObjectURL(event.target.files[0]);
+            };
+            </script>
+        </div>
+
+
+        
+        <div class="img2" style="background-color: beige; height:382; width: 350; border-style: solid; ">
+
+            <p><input type="file"  accept="image/*" name="image2" id="file2"  onchange="loadFile2(event)" style="display: none;"></p>
+            <p class="second"> <label for="file2" style="cursor: pointer;">Upload Second Image</label></p>
+            <p><img id="output2" width="349" height="332" style="background-color:white" ></p>
+            
+            <script>
+            var loadFile2 = function(event) {
+                var image2 = document.getElementById('output2');
+                image2.src = URL.createObjectURL(event.target.files[0]);
+            };
+            </script>
+        </div>
+    
+        <div class="img3" style="background-color: beige; height:382; width: 350; border-style: solid;">
+
+                <p><input type="file"  accept="image/*" name="image3" id="file3"  onchange="loadFile3(event)" style="display: none;"></p>
+                <p class="result"> <label for="file3" style="cursor: pointer;">Resultant Image</label></p>
+                <p><img id="output3" width="349" height="332" style="background-color:white" ></p>
+                
+                <script>
+                var loadFile3 = function(event) {
+                    var image3 = document.getElementById('output3');
+                    image3.src = URL.createObjectURL(event.target.files[0]);
+                };
+                </script>
+            </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GenART</title>
+    
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper.min.css')}}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+      
+
+
+
+</head>
+<body >
+<div class="container-fluid">
+    <header class="site-header">
+        <div class="row align-items-center">
+            <div class="col-4 col-sm-4 col-lg-2 order-lg-1">
+                <div class="site-branding">
+                    <h1 class="site-title"><a href="/" rel="home"><img src="{{ url_for('static', filename='images/logo.png')}}" alt="Logo"></a></h1>
+                </div><!-- .site-branding -->
+            </div><!-- .col-8 -->
+
+            <div class="col-8 col-sm-8 col-lg-10 order-3 order-md-3 order-lg-2">
+                <nav class="site-navigation flex align-items-center justify-content-end">
+                    <div class="hamburger-menu d-lg-none order-2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div><!-- .hamburger-menu -->
+
+                    <ul>
+                        <li class="current-menu-item"><a href="/">Home</a></li>
+                        <li><a href="/blog">OUR IMAGES</a></li>
+                        <li><a href="/create">CREATE</a></li>
+                        <li><a href="https://cs.stanford.edu/people/jcjohns/eccv16/">Algorithm</a></li>
+                        <li><a href="https://distracted-hopper-7d2d50.netlify.com/">Developer</a></li>
+                    </ul>
+
+                    <div class="header-email order-1">
+                        <a href="https://www.linkedin.com/in/sudhanshumishra8826/">Sudhanshu Mishra</a>
+                    </div><!-- .header-email -->
+                </nav><!-- .site-navigation -->
+            </div><!-- .col-2 -->
+        </div><!-- .row -->
+    </header><!-- .site-header -->
+
+<!-- Upload Options-->
+
+
+<form method=post enctype=multipart/form-data>
+
+    <div style="width: 100%; overflow: hidden;">
+        <hr>
+            <h2>Choose First Image</h2>
+        <hr>
+    <div class="img1" style="background-color: beige; height:280; width: 257px; border-style: solid; float: left ;  margin-left: 38%">
+
+            <p><input type="file"  accept="image/*" name="file" id="file1"  onchange="loadFile1(event)" style="display: none;"></p>
+            <p class="first"> <label for="file1" style="cursor: pointer;">Upload First Image</label></p>
+            <p><img id="output1" width="250" height="280" style="background-color:white" ></p>
+            
+            <script>
+            var loadFile1 = function(event) {
+                var image1 = document.getElementById('output1');
+                image1.src = URL.createObjectURL(event.target.files[0]);
+            };
+            </script>
+        </div>
+         
+    </div>
+<hr>
+<h2>Choose Second Image</h2>
+<hr>
+    <div>
+        <div>
+        <input type="radio" name="second" id="first" value="1">
+            <label for="first"><img class="rounded mx-auto d-block" width="250" height="250" src="{{ url_for('static', filename='images/candy.jpg')}}" alt="14.jpg"></label>
+
+        <input type="radio" name="second" id="secondimg" value="2">
+            <label for="secondimg"><img class="rounded mx-auto d-block" width="250" height="250" src="{{ url_for('static', filename='images/composition.jpg')}}" alt="9.jpg"></label>
+
+        <input type="radio" name="second" id="third"value="3">
+            <label for="third"><img class="rounded mx-auto d-block" width="250" height="250" src="{{ url_for('static', filename='images/feathers.jpg')}}" alt="15.jpg"></label>
+
+        <input type="radio" name="second" id="fourth" value="4">
+            <label for="fourth"><img class="rounded mx-auto d-block" width="250" height="250" src="{{ url_for('static', filename='images/lamuse.jpg')}}" alt="18.jpg"></label>
+        </div>    
+
+        <div>
+         
+        <input type="radio" name="second" id="fifth" value="5">
+            <label for="fifth"><img class="rounded mx-auto d-block" width="250" height="250" src="{{ url_for('static', filename='images/mosaic.jpg')}}" alt="blog1.jpeg"></label>  
+            
+            <input type="radio" name="second" id="sixth" value="6">
+            <label for="sixth"><img class="rounded mx-auto d-block" width="250" height="250" src="{{ url_for('static', filename='images/strary night.jpg')}}" alt="blog2.jpeg"></label>  
+            
+            <input type="radio" name="second" id="seventh" value="7">
+            <label for="seventh"><img class="rounded mx-auto d-block" width="250" height="250" src="{{ url_for('static', filename='images/the scream.jpg')}}" alt="blog3.jpeg"></label> 
+
+            <input type="radio" name="second" id="eighth" value="8">
+            <label for="eighth"><img class="rounded mx-auto d-block" width="250" height="250" src="{{ url_for('static', filename='images/wave.jpg')}}" alt="blog5.jpeg"></label> 
+        </div>
+        <div>
+         
+            <input type="radio" name="second" id="fifth" value="9">
+                <label for="fifth"><img class="rounded mx-auto d-block" width="250" height="250" src="{{ url_for('static', filename='images/udnie.jpg')}}" alt="blog1.jpeg"></label> 
+        </div>
+        <hr>
+        <button type="submit" value="upload" class="btn btn-primary" onclick="load(event)" style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%">Submit</button>
+        <script>
+        
+
+        var load= function(event){
+        window.location.href= "res.html?";
+       };
+       </script>
+       <hr>
+    </div>
+            </div><!-- .content-area -->
+        </div><!-- .col-md-10 -->
+    </div><!-- .row -->
+   <!--<h1>Page Under Construction</h1>-->
+
+</form>
+    <footer class="site-footer">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-4 order-3 order-lg-1">
+                <div class="footer-copyright">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://distracted-hopper-7d2d50.netlify.com/" target="_blank">Sudhanshu Mishra</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div><!-- .footer-branding -->
+            </div><!-- .col-xl-4 -->
+
+            <div class="col-12 col-lg-4 order-1 order-lg-2 d-md-none d-lg-block">
+                <nav class="footer-navigation">
+                    <ul>
+                        <li><a href="/">Back to homepage</a></li>
+                    </ul>
+                </nav><!-- .footer-navigation -->
+            </div><!-- .col-xl-4 -->
+
+            <div class="col-12 col-lg-4 order-2 order-lg-3">
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div><!-- .footer-social -->
+            </div><!-- .col-xl-4 -->
+        </div><!-- .row -->
+    </footer><!-- .site-footer -->
+</div><!-- .container-fluid -->
+
+<script type='text/javascript' src="{{ url_for('static', filename='js/jquery.js')}}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/swiper.min.js')}}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/masonry.pkgd.min.js')}}"></script>
+<script type='text/javascript' src="{{ url_for('static', filename='js/custom.js')}}"></script>
+
+</body>
+</html>
